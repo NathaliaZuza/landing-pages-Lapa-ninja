@@ -3,3 +3,90 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: Antonia;
+    src: url(./fonts/AntoniaH1-Light.woff);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Antonia;
+    src: url(./fonts/AntoniaH1-Light.woff2);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Antonia;
+    src: url(./fonts/AntoniaH2-LightItalic.woff);
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Antonia;
+    src: url(./fonts/AntoniaH2-LightItalic.woff2);
+    font-weight: 100;
+    font-style: italic;
+}
+ul{
+    list-style: none;
+}
+button{
+    background: none;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container{
+    margin: 3% 5%;
+    border: 1px solid red; 
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* border: 1px solid red; */
+    width: 90vw;
+}
+
+.header{
+    position: absolute;
+    top: 40px;
+}
+
+.header ul{
+    text-transform: uppercase;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header ul li{
+    margin-left: 25px;
+}
+
+.header img{
+    width: 110px;
+}
+
+.h1-home{
+    font-family: Antonia;
+    font-size: 91px;
+}
+.cta-titulo-txt-btn{
+    width: 330px;
+    border: 1px solid rgb(43, 255, 0);
+    margin-top: 170px;
+}
+.italic{
+    font-style: italic;
+}
