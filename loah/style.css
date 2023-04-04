@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-1: #F3A113;
+    --color-2: #4C96AF ;
+    --color-3: #F19DBE ;
+    --color-4: #FA5A3E;
+}
+
 @font-face {
     font-family: Antonia;
     src: url(./fonts/AntoniaH1-Light.woff);
@@ -40,6 +47,7 @@ button{
 }
 a{
     text-decoration: none;
+    color: #000;
 }
 
 body{
@@ -47,17 +55,21 @@ body{
     overflow-x: hidden;
 }
 
-.container{
+.container, .containerShop, .containerJournal, .containerIllustrators{
     margin: 3% 5%;
     /* border: 1px solid red;   */
     position: relative;
-   
 }
+.activeList a{
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+}
+
 .container::after{
     content: "";
     z-index: -2;
     position: absolute;
-    background-color: #F3A113;
+    background-color: var(--color-1);
     left: 0;
     top: -70px;
     transform: translateX(-10%);
@@ -69,7 +81,7 @@ body{
     content: "";
     z-index: -2;
     position: absolute;
-    background-color: #4C96AF;
+    background-color:  var(--color-2);
     background-image: url(./img/background-home-s.png);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -107,6 +119,7 @@ body{
 }
 
 .header ul li{
+    padding: 0;
     margin-left: 25px;
 }
 
@@ -155,12 +168,13 @@ body{
 
 .txt-home{
     font-size: 13px;
-    width: 250px;
+    width: 260px;
     /* border: 1px solid red; */
     margin-bottom: 25px;
+    line-height: 170%;
 }
 
-.btn-home{
+.btn-shop{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,7 +184,7 @@ body{
     width: 115px;
 }
 
-.btn-home button{
+.btn-shop button{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
