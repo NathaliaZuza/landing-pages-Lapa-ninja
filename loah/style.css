@@ -50,6 +50,10 @@ body{
     margin: 3% 5%;
     border: 1px solid red; 
 }
+
+.home{
+    display: flex;
+}
 .header-wrapper{
     display: flex;
     justify-content: space-between;
@@ -81,6 +85,19 @@ body{
 .h1-home{
     font-family: Antonia;
     font-size: 91px;
+    margin-bottom:6px;
+    /* border: 1px solid red; */
+}
+
+.div-yellow{
+    display: flex;
+    width: 45vw;
+    border: 2px solid #000;
+}
+.div-blue{
+    display: flex;
+    width: 45vw;
+    border: 2px solid #000;
 }
 .cta-titulo-txt-btn{
     width: 330px;
@@ -89,4 +106,31 @@ body{
 }
 .italic{
     font-style: italic;
+}
+
+.txt-home{
+    font-size: 13px;
+    width: 250px;
+    /* border: 1px solid red; */
+    margin-bottom: 25px;
+}
+
+.btn-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 12px 10px;
+    width: 115px;
+}
+
+.btn-home button{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.bold{
+    font-weight: 500;
 }
