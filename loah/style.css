@@ -141,7 +141,7 @@ body{
     font-size: 81px;
     font-weight: lighter;
     margin-bottom:6px;
-    margin-top: 120px;
+    padding-top: 60px;
     text-align: center;
 }
 
@@ -217,7 +217,8 @@ body{
     width: 100vw;
     transform: translate(-5%);
     border-bottom: 4px solid #000;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    margin-top: 45px;
 }
 
 .meetBeers-imgs{
