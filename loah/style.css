@@ -44,27 +44,59 @@ a{
 
 body{
     font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
 }
 
 .container{
     margin: 3% 5%;
-    border: 1px solid red; 
+    /* border: 1px solid red;   */
+    position: relative;
+   
+}
+.container::after{
+    content: "";
+    z-index: -2;
+    position: absolute;
+    background-color: #F3A113;
+    left: 0;
+    top: -70px;
+    transform: translateX(-10%);
+    min-height: 110vh;
+    width: 50vw;
+    border: 4px solid #000;
+}
+.container::before{
+    content: "";
+    z-index: -2;
+    position: absolute;
+    background-color: #4C96AF;
+    background-image: url(./img/background-home-s.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    right: 0;
+    top: -70px;
+    transform: translateX(10%);
+    width: 50vw;
+    min-height: 110.5vh;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
 }
 
 .home{
     display: flex;
 }
+
 .header-wrapper{
     display: flex;
     justify-content: space-between;
     position: relative;
     /* border: 1px solid red; */
-    width: 90vw;
+    width: 88.8vw;
 }
 
 .header{
     position: absolute;
-    top: 40px;
+    top: 0px;
 }
 
 .header ul{
@@ -83,25 +115,38 @@ body{
 }
 
 .h1-home{
-    font-family: Antonia;
+    font-family: 'Times New Roman';
     font-size: 91px;
+    font-weight: lighter;
     margin-bottom:6px;
     /* border: 1px solid red; */
 }
 
 .div-yellow{
     display: flex;
+    justify-content: center;
     width: 45vw;
-    border: 2px solid #000;
+    padding-bottom: 50px;
 }
+/* .div-yellow::after{
+    content: "";
+    background-color: rgba(127, 255, 212, 0.349);
+    position: absolute;  
+    left: 0;
+    top: 0;
+    transform: translateX(-50%);
+    height: 99.4%;
+    width: 89vw;
+    border: 2px solid #000;
+} */
 .div-blue{
     display: flex;
     width: 45vw;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
 }
 .cta-titulo-txt-btn{
-    width: 330px;
-    border: 1px solid rgb(43, 255, 0);
+    width: 420px;
+    /* border: 1px solid rgb(43, 255, 0);  */
     margin-top: 170px;
 }
 .italic{
