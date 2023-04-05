@@ -11,6 +11,13 @@
     --color-4: #FA5A3E;
 }
 
+
+/* font-family: 'Source Serif Pro', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 @font-face {
     font-family: Antonia;
     src: url(./fonts/AntoniaH1-Light.woff);
@@ -38,6 +45,7 @@
     font-weight: 100;
     font-style: italic;
 }
+
 ul{
     list-style: none;
 }
@@ -52,7 +60,7 @@ a{
 
 body{
     font-family: 'Segoe UI', sans-serif;
-    overflow-x: hidden;
+     overflow-x: hidden;
 }
 
 .container, .containerShop, .containerJournal, .containerIllustrators{
@@ -129,17 +137,19 @@ body{
 }
 
 .h1-home{
-    font-family: 'Times New Roman';
+    /* font-family: 'Cormorant Garamond', serif; */
+    font-family: 'Source Serif Pro', serif;
     font-size: 91px;
-    font-weight: lighter;
+    font-weight:200;
     margin-bottom:6px;
     /* border: 1px solid red; */
 }
 
 .h2-home{
-    font-family: 'Times New Roman';
+    font-family: 'Source Serif Pro', serif;
+    /* font-family: 'Cormorant Garamond', serif; */
     font-size: 81px;
-    font-weight: lighter;
+    font-weight: 200;
     margin-bottom:6px;
     padding-top: 60px;
     text-align: center;
@@ -195,8 +205,6 @@ body{
     font-size: 12px;
 }
 
-
-
 .meetBeers{
     background-color: #FFF9EC;
     width: 100vw;
@@ -227,10 +235,45 @@ body{
 .bkg-beer{
     transform: translateX(-5%);
     width: 100vw;
-    margin-bottom: 150px;
+    margin-bottom: 60px;
     border-bottom: 3.5px solid #000;
 }
 .beer__img img{
     display: block;
     width: 100vw;
+}
+
+.carrossel-txt p{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.featured, .partnered{
+    /* border: 1px solid red; */
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    transform: translateX(-5%
+    );
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-4070px)}
+}
+
+.animacao-txt{
+    animation: scroll 60s linear infinite;
+    display: flex;
+    /* border: 2px solid gold; */
+    width: 8142px;
+}
+
+span.animacao-item {
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Source Serif Pro', serif; */
+    font-size: 71px;
+    font-weight: lighter;
+    /* border: 1px solid green; */
 }
