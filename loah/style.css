@@ -248,6 +248,30 @@ body{
     margin-left: 5%;
 }
 
+.carrossel-txt{
+    position: relative;
+}
+
+img.carrossel-txt-img1, img.carrossel-txt-img3, img.carrossel-txt-img2{
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+img.carrossel-txt-img1{
+    top: 10%;
+    left: 35%;
+}
+img.carrossel-txt-img2{
+   bottom: 20%;
+   left: 20%;
+}
+img.carrossel-txt-img3{
+    right: 7%;
+    top: 30%;
+}
+
+
 .featured, .partnered{
     /* border: 1px solid red; */
     background-color: #FFF9EC;
